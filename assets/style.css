@@ -4,6 +4,9 @@
     background-color: black;
     color:#CEC9C9;
 }
+.overlay h1,h2{
+    color: aliceblue;
+}
 header{
     color:#CEC9C9;
     margin: 20px;
@@ -11,6 +14,10 @@ header{
     font-size: xx-small;
     display: flex;
 }
+.tab-nav a{
+    text-decoration: none;
+}
+
 
 @media (max-width:767px)
 {
@@ -25,28 +32,47 @@ header img{
     border-radius: 2px;
     min-width: 50px;
     height: 50px;
+    margin-top: 2px;
     margin-left: 200px;
     justify-content: center;
 }
 img{
     border-radius: 2px;
     min-width: 100px;
-    height: 200px;
+    height: 210px;
     margin-top: 10px;
     margin-left: 10px;
-    justify-content: center;
+    
+    
 }
 .container{
     position: relative;
-    text-align: center;
     height: auto;
 
 }
-.text1 .h2
-{
-    position:absolute;
-    margin-top: 10px;
+.overlay{
+    position: absolute;
+    top:20%;
+    margin-left: 220px;
+
+    background-color: transparent;
 }
+.overlay h1{
+    background:none;
+    font-size: 20px;
+    
+    
+}
+.overlay h2 {
+    font-size: medium;
+    background: none;
+    font-size:30px;
+}
+
+.tablet{
+    display: none;
+}
+
 
 
 
@@ -57,13 +83,150 @@ img{
 
 @media (min-width:768px)
 {
+    
+    header img{
+     display: none;
+    }
+    .container{
+        
+    }
+    .image{
+        margin-left: 30px;
+        border-radius: 5px;
+        width: 350px;
+    }
+    .tab-nav{
+        display: flex;
+        list-style: none;
+        
+    }
+    li{
+        margin-top: 20px;
+        margin-left: 90px;
+        text-decoration: none;
+    }
+    .overlay{
+        position: absolute;
+        top:30%;
+        color: #CEC9C9;
+        margin-left: 400px;    
+        background-color: transparent;
+    }
+    .overlay h1{
+        background:none;
+        font-size: 60px;    
+    }
 
+    .overlay h2 {
+        background: none;
+        font-size: 60px;
+    }
+    
 }
-@media (min-width:992px)
+@media (min-width:1024px)
 {
+    header{
+        margin-top: 10px;
+        font-size: xx-small;
+       }
+       
+    header h1{
+        padding-top: 20px;
+    }
+    header img{
+        display: none;
+       }
+       
+       .image{
+           margin-left: 30px;
+           border-radius: 5px;
+           width: 450px;
+           margin-top: 100px;
+       }
+       .tab-nav{
+           display: flex;
+           text-decoration: none;
+           list-style: none;
 
+           
+       }
+       li{
+           margin-top: 26px;
+           margin-left: 130px;
+           text-decoration: none;
+       }
+       .overlay{
+           position: absolute;
+           top:40%;
+           color: #CEC9C9;
+           margin-left: 550px;    
+           background-color: transparent;
+       }
+       .overlay h1{
+           background:none;
+           font-size: 60px;    
+       }
+   
+       .overlay h2 {
+           background: none;
+           font-size: 60px;
+       }
 }
 @media (min-width:1200px)
 {
-
+    header{
+        margin-top: 30px;
+        font-size: x-small;
+        
+       }
+       
+    header h1{
+        padding-top: 20px;
+        
+    }
+    header img{
+        display: none;
+       }
+       
+       .image{
+           margin-left: 150px;
+           border-radius: 5px;
+           width: 500px;
+           margin-top: 50px;
+       }
+       .tab-nav{
+           display: flex;
+           list-style: none;
+           justify-content: space-evenly;
+           justify-content: flex-end;
+           margin-left: 500px;
+           
+       }
+       li{
+           margin-top:25px;
+           display: flex;
+           margin-left: 100px;
+           padding-left: 10px;
+           margin-right: 2px;
+           justify-content: flex-end;
+           justify-content: space-evenly;
+           text-decoration: none;
+           font-size:medium;
+       }
+       .overlay{
+           position: absolute;
+           top:45%;
+           color: #CEC9C9;
+           margin-left: 880px;    
+           background-color: transparent;
+       }
+       .overlay h1{
+           background:none;
+           font-size: 60px;    
+       }
+   
+       .overlay h2 {
+           background: none;
+           font-size: 60px;
+       }
 }
