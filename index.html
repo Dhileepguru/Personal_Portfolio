@@ -5,36 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="/assets/style.css" media="screen">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="/assets/script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="content">
         <h1>PORTFOLIO &copy;2024</h1>
-        <div class="mb">
+        <div class="mb content">
             <img src="assets/images/icons8-fries-menu-96 (2).png" alt="menu">
             
         </div>
-            <div class="tablet">
-                <ul class="tab-nav">
+            <div class="tablet ">
+                <ul class="tab-nav content" >
                     <li> <a href="#">Home</a></li>
                     <li> <a href="#">About</a></li>
                     <li> <a href="#">Skills</a></li>
                     <li> <a href="#">Project</a></li>
                     <li> <a href="#">Contact</a></li>
                     
-           </div>
+            </div>
         </header>
     
-        <div class="container">
+        <div class="container content ">
             
-            <img class="image" src="/assets/images/dp.png">
-            <div class="overlay">
+            <img class="image content" src="/assets/images/dp.png">
+            <div class="overlay content ">
                     <h1>Hi,</h1>
-                    <h2>I'm <span>Dhileep</span></h2>
-                    <h2>Web Designer </h2>
+                    <h2>I'm <span class="info"></span></h2>
+                   
                     
             </div>
 
         </div>
-      
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script>
+            var typed= new Typed(".info",{
+                strings: ["Dhileep D","Blogger","Web Designer"],
+                typespeed: 900,
+                backspeed: 1000,
+                looped: true
+            })
+        </script>
 </body>
 </html>
