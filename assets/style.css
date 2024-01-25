@@ -25,23 +25,19 @@ header{
     align-items: end;
     justify-content: end;
 }
-li{
-    cursor: pointer;
-    position: relative;
-}
-li:hover{
-   
-    background-color: lightblue;
-}
+
+
+
 .hi{
     font-size: 7px;
-    color: white;
+    color: gray;
     font-weight: 200;
     line-height: 1.2;
 }
 .text{
     font-weight: 800;
     font-size: 20px;
+    color: white;
 }
 
 
@@ -272,7 +268,7 @@ html, body {
        .overlay{
            position: absolute;
            top:45%;
-           color: #CEC9C9;
+           color:white;
            margin-left: 880px;    
            background-color: transparent;
        }
@@ -304,12 +300,49 @@ html, body {
         margin-top: 0;
         background-color: black;
     }
-    
-    .fixedheader.scrolled {
+    .fixedheader li {
+        color: #CEC9C9; 
+    }
+    .fixedheader.scrolled{
         background-color: white;
-        color: darkgrey;
+    }
+    
+    .fixedheader.scrolled h1 , .fixedheader.scrolled a{ 
+        color: black !important;
         z-index: 1000;
     }
     
+    .con{
+        background-color:none;
+    }
+
+    .about{
+        margin-left: 700px;
+    }
+    
+    li{
+        cursor: pointer;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+    li:hover{
        
+        color:ghostwhite;
+        text-decoration: underline;
+    }
+    .about h1{
+        color: white;
+        font-weight: 50;
+    }
+    .me{
+        color: grey;
+    }
+    p {
+        font-family: 'Arial', sans-serif; 
+        font-size: 16px; 
+        line-height: 1.5; 
+        color: darkgray;
+        margin-bottom: 20px;
+    }
+    
 }

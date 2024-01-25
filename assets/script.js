@@ -1,6 +1,4 @@
-<script>
-  AOS.init();
-</script>
+
 
 window.addEventListener("scroll",function(){
   var header=document.querySelector(".fixedheader");
