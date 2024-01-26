@@ -11,3 +11,10 @@ window.addEventListener("scroll",function(){
     header.classList.remove("scrolled");
   }
 })
+
+
+function showContent(value){
+  var display= document.querySelector(".display1");
+  display.textContent=value;
+
+}

@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     
-    color:#CEC9C9;
+   
 }
 body{
     margin: 0;
@@ -282,10 +282,14 @@ html, body {
            font-size: 60px;
        }
        /* want to use in another media */
+       *{
+        color: #CEC9C9;
+       }
        html, body {
         margin: 0;
         padding: 0;
         background-color: black;
+        color: #CEC9C9;
     }
     
        .fixedheader {
@@ -316,9 +320,7 @@ html, body {
         background-color:none;
     }
 
-    .about{
-        margin-left: 700px;
-    }
+    
     
     li{
         cursor: pointer;
@@ -332,11 +334,9 @@ html, body {
     }
     .about h1{
         color: white;
-        font-weight: 50;
+        font-weight: 100;
     }
-    .me{
-        color: grey;
-    }
+    
     p {
         font-family: 'Arial', sans-serif; 
         font-size: 16px; 
@@ -344,5 +344,53 @@ html, body {
         color: darkgray;
         margin-bottom: 20px;
     }
+    .vertical{
+        display:flex;
+        width: 1px;
+        height: 100px;
+        background-color:black;
+        margin: 0 20px;
+        }
+    /*abouts*/
     
+    .abouts{
+        display: flex;
+        background-color: black;
+        
+
+    }
+    .vertical img{
+        margin-left: 300px;
+        border-radius: 5px;
+        width: 1000px;
+        height: 210px;
+        align-items: center;
+        
+    }
+
+    .about .vertical {
+        
+        color:black;
+        
+        margin: 10px;
+    }
+    .about{
+        margin-left: 700px;
+        margin-top: 10px !important;
+    }
+    .about-ul{
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+    }
+    .about-ul a{
+        list-style: none;
+    }
+    .about-ul li{
+       list-style: none;
+    }
+    .display1{
+        background-color: aquamarine;
+        width:fit-content;
+    }
 }
