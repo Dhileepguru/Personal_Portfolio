@@ -266,6 +266,34 @@ html, body {
            font-size:medium;
        }
        .overlay{
+        position: absolute;
+        top:40%;
+        color: #CEC9C9;
+        margin-left: 550px;    
+        background-color: transparent;
+    }
+    .overlay h1{
+        background:none;
+        font-size: 60px;    
+    }
+
+    .overlay h2 {
+        background: none;
+        font-size: 60px;
+    }
+
+
+
+
+
+
+
+
+
+       .p{
+
+       }
+       .overlay{
            position: absolute;
            top:45%;
            color:white;
@@ -359,12 +387,9 @@ html, body {
         
 
     }
-    .vertical img{
-        margin-left: 300px;
-        border-radius: 5px;
-        width: 1000px;
-        height: 210px;
-        align-items: center;
+    .vertical h1{
+        
+        
         
     }
 
@@ -384,7 +409,7 @@ html, body {
     }
     .b{
         color:white;
-        margin-left:700px;
+        margin-left:680px;
         height: fit-content;
         width: max-content;
 
@@ -400,12 +425,129 @@ html, body {
         border-radius: 10px;
         padding: 2px;
         width: 75%;
+        display: flex;
     }
     .sec1{
         
         padding-left:100px ;
+        position: relative;
+        overflow: hidden;
     }
     .sec3{
         padding-right: 20px;
     }
+
+    .p{
+        color:white;
+        margin-left:650px;
+        height: fit-content;
+        width: max-content;
+
+    }
+
+    .project img{
+        
+        transition: transform 0.3s ease-in-out;
+    }
+    .project img:hover{
+        transform: scale(1.2);
+    }
+    .pro{
+        margin-left: 625px;
+    }
+    .overlay2{
+        position: absolute;
+        display: flex;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .sec1:hover .overlay2{
+        opacity: 1;
+    }
+
+    .verttical{
+     width:20%;
+    height: 100%;
+}
+    .left{
+        margin-left: 5px;
+    }
+    .c{
+        display: flex;
+        margin-left: 100px;
+    }
+    .c h3{
+        color: lightgreen;
+    }
+    
+    form {
+        max-width: 400px;
+        margin-left: 500px;        
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+  
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+  
+      button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 12px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+  
+      button:hover {
+        background-color: #45a049;
+      }
+      
+    footer {
+        background-color: white;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+  
+      footer p {
+        margin: 0;
+        font-size: 20px;
+      }
+  
+      .social-icons {
+        margin-top: 10px;
+      }
+  
+      .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        color: red;
+      }
+  
+      .social-icons i {
+        font-size: 24px;
+      }
+   
+
+
 }

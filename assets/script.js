@@ -1,5 +1,6 @@
 
-
+document.addEventListener("DOMContentLoaded", function() {
+  
 window.addEventListener("scroll",function(){
   var header=document.querySelector(".fixedheader");
   var scrollPosition=window.scrollY;
@@ -11,4 +12,8 @@ window.addEventListener("scroll",function(){
     header.classList.remove("scrolled");
   }
 })
+});
+
+
+
 
