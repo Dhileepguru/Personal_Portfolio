@@ -378,19 +378,34 @@ html, body {
         margin-left: 700px;
         margin-top: 10px !important;
     }
-    .about-ul{
+    .blog{
         display: flex;
-        text-decoration: none;
-        list-style: none;
+        
     }
-    .about-ul a{
-        list-style: none;
+    .b{
+        color:white;
+        margin-left:700px;
+        height: fit-content;
+        width: max-content;
+
     }
-    .about-ul li{
-       list-style: none;
+    .sec{
+        flex: 1;
+        border-radius: 10px;
+        border-color: red;
+        
     }
-    .display1{
-        background-color: aquamarine;
-        width:fit-content;
+    .sec img{
+        border-color:red;
+        border-radius: 10px;
+        padding: 2px;
+        width: 75%;
+    }
+    .sec1{
+        
+        padding-left:100px ;
+    }
+    .sec3{
+        padding-right: 20px;
     }
 }

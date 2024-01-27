@@ -12,9 +12,3 @@ window.addEventListener("scroll",function(){
   }
 })
 
-
-function showContent(value){
-  var display= document.querySelector(".display1");
-  display.textContent=value;
-
-}
