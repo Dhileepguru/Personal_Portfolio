@@ -45,7 +45,7 @@ header{
 
 
 
-@media (max-width:767px)
+@media only screen and(max-width:767px)
 {
    
    header{
@@ -61,15 +61,15 @@ header img{
     min-width: 50px;
     height: 50px;
     margin-top: 2px;
-    margin-left: 350px;
-    
+    margin-left: 10px;
+
 }
 img{
     border-radius: 10px;
     min-width: 50px;
     height: 350px;
     margin-top: 90px;
-    margin-left:85px;
+    margin-left:5px;
     
     
 }
