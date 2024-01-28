@@ -57,19 +57,19 @@ header h1{
     padding-top: 8px;
 }
 header img{
-    border-radius: 2px;
+    border-radius: 10px;
     min-width: 50px;
     height: 50px;
     margin-top: 2px;
-    margin-left: 200px;
-    justify-content: center;
+    margin-left: 350px;
+    
 }
 img{
-    border-radius: 2px;
-    min-width: 100px;
-    height: 210px;
-    margin-top: 10px;
-    margin-left: 10px;
+    border-radius: 10px;
+    min-width: 50px;
+    height: 350px;
+    margin-top: 90px;
+    margin-left:85px;
     
     
 }
@@ -80,21 +80,25 @@ img{
 }
 .overlay{
     position: absolute;
-    top:20%;
-    margin-left: 220px;
-
+    top:10%;
+    padding-left:2px;
+    margin-left:80px;
+    margin-top: 40px;
     background-color: transparent;
 }
 .overlay h1{
+    margin-top: 200px;
     background:none;
-    font-size: 20px;
-    
-    
+    font-size: 5px;    
+}
+.h1{
+    font-size: small;
 }
 .overlay h2 {
     font-size: medium;
     background: none;
-    font-size:30px;
+    font-size:5px;
+
 }
 
 .tablet{
@@ -106,9 +110,314 @@ html, body {
     background-color: black;
 }
 
+.overlay{
+    position: absolute;
+    top:45%;
+    color:white;   
+    background-color: transparent;
+}
+.overlay h1{
+    background:none;
+    font-size: 50px;    
+}
+
+.overlay h2 {
+    background: none;
+    font-size: 50px;
+}
+/* want to use in another media */
+*{
+ color: #CEC9C9;
+}
+html, body {
+ margin: 0;
+ padding: 0;
+ background-color: black;
+ color: #CEC9C9;
+}
+
+.fixedheader {
+ position: fixed;
+ background-color: transparent;
+ transition: background-color 0.3s ease, color 0.3s ease;
+ padding: 10px;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 1000;
+ margin-top: 0;
+ background-color: black;
+}
+.fixedheader li {
+ color: #CEC9C9; 
+}
+.fixedheader.scrolled{
+ background-color: white;
+}
+
+.fixedheader.scrolled h1 , .fixedheader.scrolled a{ 
+ color: black !important;
+ z-index: 1000;
+}
+
+.con{
+ background-color:none;
+}
+
+
+
+li{
+ cursor: pointer;
+ position: relative;
+ transition: color 0.3s ease;
+}
+li:hover{
+
+ color:ghostwhite;
+ text-decoration: underline;
+}
+.about h1{
+ color: white;
+ font-weight: 100;
+}
+
+p {
+ font-family: 'Arial', sans-serif; 
+ font-size: 16px; 
+ line-height: 1.5; 
+ color: darkgray;
+ margin-bottom: 20px;
+}
+.vertical{
+ display:flex;
+ width: 1px;
+ height: 100px;
+ background-color:black;
+ margin: 0 20px;
+ }
+/*abouts*/
+
+.abouts{
+ display: flex;
+ background-color: black;
+ 
+
+}
+
+
+.about .vertical {
+ 
+ color:black;
+ 
+ margin: 1px;
+}
+.about{
+ margin-left: 85px;
+ text-align:justify;
+margin-top:280px !important;
+}
+.about h4{
+ color:#CEC9C9;
+}
+.about .para{
+    margin-top: 2px;
+    margin-left: -130px;
+}
+.blog{
+ display: flex;
+ 
+}
+.h img:hover{
+ transition: transform 0.3s ease-in-out;
+}
+.b{
+ color:white;
+ margin-left:200px;
+ height: 100%;
+ width: 100%;
+
+}
+.blog h1{
+    margin-left: 90px;
+    width: max-content;
+}
+.sec{
+ flex: 1;
+ border-radius:10px;
+ border-color: red;
+ 
+}
+.sec img{
+ border-color:red;
+ border-radius: 5px;
+ padding: 2px;
+ width: 200px;
+ display: flex;
+}
+.sec1{
+ 
+ padding-left:100px ;
+ position: relative;
+ 
+}
+.sec2{
+    
+    width: 200px;
+    margin-left: -300px;
+    margin-top: 500px;
+}
+.sec3{
+ padding-right: 20px;
+ margin-top: 1100px;
+ width: 200px;
+    margin-left: -300px;
+}
+
+.p{
+ color:white;
+ margin-left:200px;
+ height: fit-content;
+ width: max-content;
+
+}
+
+.project img{
+ 
+ transition: transform 0.3s ease-in-out;
+}
+.project img:hover{
+ transform: scale(1.2);
+}
+.pro{
+ margin-left: 320px;
+}
+.overlay2{
+ position: absolute;
+ display: flex;
+ opacity: 0;
+ transition: opacity 0.3s ease-in-out;
+}
+.sec1:hover .overlay2{
+ opacity: 1;
+}
+
+.vertical{
+width:20%;
+height: 100%;
+}
+.left{
+ margin-left: 5px;
+}
+.c{
+ display: flex;
+ margin-left: 200px;
+}
+.c h3{
+
+ color: lightcyan;
+}
+.c h4{
+    margin-left: -30px;
+    width: 300px;
+}
+
+form {
+ max-width: 400px;
+ margin-left: 200px;        
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea {
+ width: 100%;
+ padding: 12px;
+ margin-bottom: 16px;
+ box-sizing: border-box;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ font-size: 16px;
+}
+
+textarea {
+ resize: vertical;
+ min-height: 100px;
+}
+
+button {
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ padding: 12px 16px;
+ border-radius: 4px;
+ cursor: pointer;
+ font-size: 16px;
+}
+
+button:hover {
+ background-color: #45a049;
+}
+
+footer
+ {
+ border-top: 0.1rem solid grey;
+ border-radius: 5px;
+ border-color: #CEC9C9;
+ background-color: black;
+ padding: 20px;
+ position: relative;
+ bottom: 0;
+ width: 100%;
+ 
+}
+ 
+footer p {
+ margin: 0;
+ font-size: 20px;
+ margin-left:50px;
+ color: #CEC9C9;
+}
+.p1{
+margin-left: 175px;
+}
+.icon{
+ font-size: 30px;
+ margin: 10px;
+ margin-left: 270px;
+}
+.p2{
+margin-left: 200px;
+}
+.fa-square-instagram:hover{
+ color:#e4405f;
+}
+.icon a{
+ margin-right: 30px;
+}
+.fa-twitter-square:hover{
+ color: white;
+}
+.fa-linkedin:hover{
+ color: lightskyblue;
+}
+.fa-github-square:hover{
+ color: white;
+}
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -119,11 +428,12 @@ html, body {
     header img{
      display: none;
     }
-    .container{
-        
+    .content h1{
+        margin-top: 15px;
     }
     .image{
-        margin-left: 30px;
+        margin-top: 100px;
+        margin-left: 10px;
         border-radius: 5px;
         width: 350px;
     }
@@ -158,8 +468,301 @@ html, body {
         padding: 0;
         background-color: black;
     }
+    /*changes*/
+
+    
+    .overlay{
+        position: absolute;
+        top:45%;
+        color:white;   
+        background-color: transparent;
+    }
+    .overlay h1{
+        background:none;
+        font-size: 50px;    
+    }
+
+    .overlay h2 {
+        background: none;
+        font-size: 50px;
+    }
+    /* want to use in another media */
+    *{
+     color: #CEC9C9;
+    }
+    html, body {
+     margin: 0;
+     padding: 0;
+     background-color: black;
+     color: #CEC9C9;
+ }
+ 
+    .fixedheader {
+     position: fixed;
+     background-color: transparent;
+     transition: background-color 0.3s ease, color 0.3s ease;
+     padding: 10px;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1000;
+     margin-top: 0;
+     background-color: black;
+ }
+ .fixedheader li {
+     color: #CEC9C9; 
+ }
+ .fixedheader.scrolled{
+     background-color: white;
+ }
+ 
+ .fixedheader.scrolled h1 , .fixedheader.scrolled a{ 
+     color: black !important;
+     z-index: 1000;
+ }
+ 
+ .con{
+     background-color:none;
+ }
+
+ 
+ 
+ li{
+     cursor: pointer;
+     position: relative;
+     transition: color 0.3s ease;
+ }
+ li:hover{
+    
+     color:ghostwhite;
+     text-decoration: underline;
+ }
+ .about h1{
+     color: white;
+     font-weight: 100;
+ }
+ 
+ p {
+     font-family: 'Arial', sans-serif; 
+     font-size: 16px; 
+     line-height: 1.5; 
+     color: darkgray;
+     margin-bottom: 20px;
+ }
+ .vertical{
+     display:flex;
+     width: 1px;
+     height: 100px;
+     background-color:black;
+     margin: 0 20px;
+     }
+ /*abouts*/
+ 
+ .abouts{
+     display: flex;
+     background-color: black;
+     
+
+ }
+ 
+
+ .about .vertical {
+     
+     color:black;
+     
+     margin: 10px;
+ }
+ .about{
+     margin-left: 300px;
+     margin-top: 10px !important;
+ }
+ .about h4{
+     color:#CEC9C9;
+ }
+ .blog{
+     display: flex;
+     
+ }
+ .h img:hover{
+     transform: skewX(20deg);
+ }
+ .b{
+     color:white;
+     margin-left:380px;
+     height: fit-content;
+     width: max-content;
+
+ }
+ .sec{
+     flex: 1;
+     border-radius: 10px;
+     border-color: red;
+     
+ }
+ .sec img{
+     border-color:red;
+     border-radius: 10px;
+     padding: 2px;
+     width: 75%;
+     display: flex;
+ }
+ .sec1{
+     
+     padding-left:100px ;
+     position: relative;
+     overflow: hidden;
+ }
+ .sec3{
+     padding-right: 20px;
+ }
+
+ .p{
+     color:white;
+     margin-left:200px;
+     height: fit-content;
+     width: max-content;
+
+ }
+
+ .project img{
+     
+     transition: transform 0.3s ease-in-out;
+ }
+ .project img:hover{
+     transform: scale(1.2);
+ }
+ .pro{
+     margin-left: 320px;
+ }
+ .overlay2{
+     position: absolute;
+     display: flex;
+     opacity: 0;
+     transition: opacity 0.3s ease-in-out;
+ }
+ .sec1:hover .overlay2{
+     opacity: 1;
+ }
+
+ .verttical{
+  width:20%;
+ height: 100%;
+}
+ .left{
+     margin-left: 5px;
+ }
+ .c{
+     display: flex;
+     margin-left: 100px;
+ }
+ .c h3{
+     color: lightcyan;
+ }
+ 
+ form {
+     max-width: 400px;
+     margin-left: 200px;        
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+   input,
+   textarea {
+     width: 100%;
+     padding: 12px;
+     margin-bottom: 16px;
+     box-sizing: border-box;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 16px;
+   }
+
+   textarea {
+     resize: vertical;
+     min-height: 100px;
+   }
+
+   button {
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     padding: 12px 16px;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+   }
+
+   button:hover {
+     background-color: #45a049;
+   }
+   
+ footer
+     {
+     border-top: 0.1rem solid grey;
+     border-radius: 5px;
+     border-color: #CEC9C9;
+     background-color: black;
+     padding: 20px;
+     position: relative;
+     bottom: 0;
+     width: 100%;
+     
+   }
+     
+   footer p {
+     margin: 0;
+     font-size: 20px;
+     margin-left:50px;
+     color: #CEC9C9;
+   }
+   .p1{
+    margin-left: 175px;
+   }
+   .icon{
+     font-size: 30px;
+     margin: 10px;
+     margin-left: 270px;
+   }
+   .p2{
+    margin-left: 200px;
+   }
+   .fa-square-instagram:hover{
+     color:#e4405f;
+   }
+   .icon a{
+     margin-right: 30px;
+   }
+   .fa-twitter-square:hover{
+     color: white;
+   }
+   .fa-linkedin:hover{
+     color: lightskyblue;
+   }
+   .fa-github-square:hover{
+     color: white;
+   }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width:1024px)
 {
     header{
@@ -168,7 +771,7 @@ html, body {
        }
        
     header h1{
-        padding-top: 20px;
+        padding-top: 10px;
     }
     header img{
         display: none;
@@ -177,7 +780,7 @@ html, body {
        .image{
            margin-left: 30px;
            border-radius: 5px;
-           width: 450px;
+           width: 350px;
            margin-top: 100px;
        }
        .tab-nav{
@@ -191,12 +794,16 @@ html, body {
            margin-top: 26px;
            margin-left: 130px;
            text-decoration: none;
+          
+       }
+       ul{
+        margin-left: 50px;
        }
        .overlay{
            position: absolute;
            top:40%;
            color: #CEC9C9;
-           margin-left: 550px;    
+           margin-left: 150px;    
            background-color: transparent;
        }
        .overlay h1{
@@ -214,7 +821,321 @@ html, body {
         padding: 0;
         background-color: black;
     }
+
+    /*changes*/
+    
+
+
+
+    .p{
+
+    }
+    .overlay{
+        position: absolute;
+        top:45%;
+        color:white;
+        margin-left: 500px;    
+        background-color: transparent;
+    }
+    .overlay h1{
+        background:none;
+        font-size: 50px;    
+    }
+
+    .overlay h2 {
+        background: none;
+        font-size: 50px;
+    }
+    /* want to use in another media */
+    *{
+     color: #CEC9C9;
+    }
+    html, body {
+     margin: 0;
+     padding: 0;
+     background-color: black;
+     color: #CEC9C9;
+ }
+ 
+    .fixedheader {
+     position: fixed;
+     background-color: transparent;
+     transition: background-color 0.3s ease, color 0.3s ease;
+     padding: 10px;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1000;
+     margin-top: 0;
+     background-color: black;
+ }
+ .fixedheader li {
+     color: #CEC9C9; 
+ }
+ .fixedheader.scrolled{
+     background-color: white;
+ }
+ 
+ .fixedheader.scrolled h1 , .fixedheader.scrolled a{ 
+     color: black !important;
+     z-index: 1000;
+ }
+ 
+ .con{
+     background-color:none;
+ }
+
+ 
+ 
+ li{
+     cursor: pointer;
+     position: relative;
+     transition: color 0.3s ease;
+ }
+ li:hover{
+    
+     color:ghostwhite;
+     text-decoration: underline;
+ }
+ .about h1{
+     color: white;
+     font-weight: 100;
+ }
+ 
+ p {
+     font-family: 'Arial', sans-serif; 
+     font-size: 16px; 
+     line-height: 1.5; 
+     color: darkgray;
+     margin-bottom: 20px;
+ }
+ .vertical{
+     display:flex;
+     width: 1px;
+     height: 100px;
+     background-color:black;
+     margin: 0 20px;
+     }
+ /*abouts*/
+ 
+ .abouts{
+     display: flex;
+     background-color: black;
+     
+
+ }
+ 
+
+ .about .vertical {
+     
+     color:black;
+     
+     margin: 10px;
+ }
+ .about{
+     margin-left: 300px;
+     margin-top: 10px !important;
+ }
+ .about h4{
+     color:#CEC9C9;
+ }
+ .blog{
+     display: flex;
+     
+ }
+ .h img:hover{
+     transform: skewX(20deg);
+ }
+ .b{
+     color:white;
+     margin-left:500px;
+     height: fit-content;
+     width: max-content;
+
+ }
+ .sec{
+     flex: 1;
+     border-radius: 10px;
+     border-color: red;
+     
+ }
+ .sec img{
+     border-color:red;
+     border-radius: 10px;
+     padding: 2px;
+     width: 75%;
+     display: flex;
+ }
+ .sec1{
+     
+     padding-left:100px ;
+     position: relative;
+     overflow: hidden;
+ }
+ .sec3{
+     padding-right: 20px;
+ }
+
+ .p{
+     color:white;
+     margin-left:200px;
+     height: fit-content;
+     width: max-content;
+
+ }
+
+ .project img{
+     
+     transition: transform 0.3s ease-in-out;
+ }
+ .project img:hover{
+     transform: scale(1.2);
+ }
+ .pro{
+     margin-left: 425px;
+ }
+ .overlay2{
+     position: absolute;
+     display: flex;
+     opacity: 0;
+     transition: opacity 0.3s ease-in-out;
+ }
+ .sec1:hover .overlay2{
+     opacity: 1;
+ }
+
+ .verttical{
+  width:20%;
+ height: 100%;
 }
+ .left{
+     margin-left: 5px;
+ }
+ .c{
+     display: flex;
+     margin-left: 100px;
+ }
+ .c h3{
+     color: lightcyan;
+ }
+ 
+ form {
+     max-width: 400px;
+     margin-left: 300px;        
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+   input,
+   textarea {
+     width: 100%;
+     padding: 12px;
+     margin-bottom: 16px;
+     box-sizing: border-box;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 16px;
+   }
+
+   textarea {
+     resize: vertical;
+     min-height: 100px;
+   }
+
+   button {
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     padding: 12px 16px;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+   }
+
+   button:hover {
+     background-color: #45a049;
+   }
+   
+ footer
+     {
+     border-top: 0.1rem solid grey;
+     border-radius: 5px;
+     border-color: #CEC9C9;
+     background-color: black;
+     padding: 20px;
+     position: relative;
+     bottom: 0;
+     width: 100%;
+     
+   }
+     
+   footer p {
+     margin: 0;
+     font-size: 20px;
+     margin-left:50px;
+     color: #CEC9C9;
+   }
+   .p1{
+    margin-left: 300px;
+   }
+   .p2{
+    margin-left: 325px;
+   }
+   .icon{
+     font-size: 30px;
+     margin: 10px;
+     margin-left: 400px;
+   }
+   .fa-square-instagram:hover{
+     color:#e4405f;
+   }
+   .icon a{
+     margin-right: 30px;
+   }
+   .fa-twitter-square:hover{
+     color: white;
+   }
+   .fa-linkedin:hover{
+     color: lightskyblue;
+   }
+   .fa-github-square:hover{
+     color: white;
+   }
+   
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width:1200px)
 {
 
@@ -387,11 +1308,7 @@ html, body {
         
 
     }
-    .vertical h1{
-        
-        
-        
-    }
+    
 
     .about .vertical {
         
@@ -402,6 +1319,9 @@ html, body {
     .about{
         margin-left: 700px;
         margin-top: 10px !important;
+    }
+    .about h4{
+        color:#CEC9C9;
     }
     .blog{
         display: flex;
@@ -534,11 +1454,14 @@ html, body {
         
       }
         
-      footer p {
+      footer p{
         margin: 0;
         font-size: 20px;
         margin-left:550px;
         color: #CEC9C9;
+      }
+      .p1{
+        margin-left: 10px;
       }
   
       .icon{
@@ -560,6 +1483,9 @@ html, body {
       }
       .fa-github-square:hover{
         color: white;
+      }
+      .p2{
+        margin-left:35px
       }
       
 
