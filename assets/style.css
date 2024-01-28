@@ -477,7 +477,7 @@ html, body {
         margin-left: 100px;
     }
     .c h3{
-        color: lightgreen;
+        color: lightcyan;
     }
     
     form {
@@ -518,36 +518,50 @@ html, body {
         background-color: #45a049;
       }
       
-    footer {
-        background-color: white;
-        color: white;
-        text-align: center;
+    footer
+        {
+        border-top: 0.1rem solid grey;
+        border-radius: 5px;
+        border-color: #CEC9C9;
+        background-color: black;
         padding: 20px;
         position: relative;
         bottom: 0;
         width: 100%;
+        
       }
-  
+        
       footer p {
         margin: 0;
         font-size: 20px;
+        margin-left:550px;
+        color: #CEC9C9;
       }
   
-      .social-icons {
-        margin-top: 10px;
+      .icon{
+        font-size: 30px;
+        margin: 10px;
+        margin-left: 600px;
       }
-  
-      .social-icons a {
-        display: inline-block;
-        margin: 0 10px;
-        text-decoration: none;
-        color: red;
+      .fa-square-instagram:hover{
+        color:#e4405f;
       }
-  
-      .social-icons i {
-        font-size: 24px;
+      .icon a{
+        margin-right: 30px;
       }
+      .fa-twitter-square:hover{
+        color: white;
+      }
+      .fa-linkedin:hover{
+        color: lightskyblue;
+      }
+      .fa-github-square:hover{
+        color: white;
+      }
+      
+
+    }
+
    
 
 
-}
