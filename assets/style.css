@@ -407,6 +407,9 @@ html, body {
         display: flex;
         
     }
+    .h img:hover{
+        transform: skewX(20deg);
+    }
     .b{
         color:white;
         margin-left:680px;

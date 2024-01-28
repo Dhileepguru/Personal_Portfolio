@@ -22,28 +22,33 @@
 </head>
 <body>
     <header class="content fixedheader">
-        <h1> PORTFOLIO </h1>
+        <div data-aos="fade-down"data-aos-duration="2000"  data-aos-delay="4000">
+            <h1> PORTFOLIO </h1>
+        </div>
+        
         <div class="mb content">
             <img src="assets/images/icons8-fries-menu-96 (2).png" alt="menu">
             
         </div>
-            <div class="tablet ">
+            <div class="tablet "  data-aos="fade-down"data-aos-duration="3500"  data-aos-delay="1000">
                 <ul class="tab-nav content" >
                     <li> <a href="#slide-1">Home</a></li>
                     <li> <a href="#about">About</a></li>
                     <li> <a href="#blog">Blogs</a></li>
-                    <li> <a href="#">Project</a></li>
-                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#projects">Project</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
                     
             </div>
      </header>
     
         <div class="container content slide1" id="slide-1">
-            <div data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1500">
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000"  data-aos-delay="1500">
                 <img class="image content" src="/assets/images/dp.png">
             </div>
             
-            <div class="overlay content ">
+            <div class="overlay content " data-aos="fade-down"data-aos-duration="3000"  data-aos-delay="1500">
                     <h1 class="hi">Hi,</h1>
                     <h2 class="text">I'm <span class="info"></span></h2>
                    
@@ -56,7 +61,7 @@
         <div class="abouts con" id="about">
             <div class="vertical line">
                 <div class="c">
-                    <div class="detail"><br>
+                    <div class="detail"  data-aos="fade-right"data-aos-duration="3000"  data-aos-delay="1500"><br>
                         <h3 class="left">My Details  </h3>
                     <br>
                     <br>
@@ -72,7 +77,7 @@
                 
 
             </div>
-            <div class="about">
+            <div class="about" data-aos="fade-left"data-aos-duration="3500"  data-aos-delay="1000" >
                 <h1>About <span class="me">Me</span></h1><br>
                 <div >
                     <p>I'm Dhileep<br><br>who holds a degree in Coimbatore Institute of Technology. B.E. (Computer Science and Engineering), is actively engaged in skill evolution. He has a passion for sports, particularly cricket, and enjoys listening to songs. Currently, he is immersed in the process of learning front-end development, showcasing his dedication to expanding his skill set in this field.</p>
@@ -86,7 +91,7 @@
         <h1 class="b" id="blog"> My <span class="me">Blogs</span></h1><br><br><br><br>
         <div class="blog">
             
-            <section class="sec sec1">
+            <section class="sec sec1 h" data-aos="zoom-out" data-aos-duration="3500"  data-aos-delay="1000">
                 <img src="/assets/images/blog1.png" alt="profile"><br><br>
                 <div>
                     <h1>Ten Inspired Websites</h1>
@@ -96,7 +101,9 @@
                 </div>
                 
             </section>
-            <section class="sec">
+            <section class="sec h" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <img src="/assets/images/blog2.jpg" alt="profile"><br><br><br><br>
                 <div>
                     <h1>Respect Refined</h1>
@@ -105,7 +112,7 @@
                 
                 </div>
             </section>
-            <section class="sec sec3">
+            <section class="sec sec3 h"  data-aos="fade-up-left" data-aos-duration="3500"  data-aos-delay="1000">
                 <img src="/assets/images/blog3.jpg" alt="profile"><br><br>
                 <div>
                     <h1>Art Of Order</h1>
@@ -118,25 +125,26 @@
         <br><br><br><br><br><br><br><br><br><br><br><br>
         
         <!--Projects-->
+        
         <h1 class="b pro " id="projects">Featured <span class="me">Projects</span></h1><br><br><br><br>
         <div class="blog project">
            
-            <section class="sec sec1 ">
+            <section class="sec sec1"  class="overlay content " data-aos="fade-down"data-aos-duration="2000"  data-aos-delay="4000">
                 <img src="/assets/images/Ecommerce2.png" alt="profile">
-                <div class="overlay2">Ecommerce</div>
+                <div class="overlay2"></div>
                 <br><br>
                 <div>
                     <h1>E-Commerce Website</h1>
                 </div>
                 
             </section>
-            <section class="sec">
+            <section class="sec" data-aos="fade-down"data-aos-duration="2000"  data-aos-delay="4000">
                 <img src="/assets/images/Todolist.png" alt="profile"><br><br><br>
                 <div>
                     <h1>To-Do-List</h1>
                 </div>
             </section>
-            <section class="sec sec3">
+            <section class="sec sec3" data-aos="fade-down"data-aos-duration="2000"  data-aos-delay="4000">
                 <img src="/assets/images/Api.png" alt="profile"><br><br>
                 <div>
                     <h1>Movie-Api</h1>
@@ -148,11 +156,18 @@
         <br><br><br><br><br><br><br><br><br><br><br><br>
 
         <!--CONTACT-->
-        <h1 class="b pro" id="projects">Get  <span class="me">In Touch</span></h1><br><br><br><br> 
+        <h1 class="b pro" id="contact">Get  <span class="me">In Touch</span></h1><br><br><br><br> 
         <form>
-            <input type="text" placeholder="Full Name">
-            <input type="text" placeholder="Your Email Address">
-            <textarea id="message" name="message" rows="4" placeholder="Enter your Message"></textarea>
+            <div data-aos="fade-left"data-aos-duration="2000"  data-aos-delay="4000">
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div data-aos="fade-right"data-aos-duration="2000"  data-aos-delay="4000">
+                <input type="text" placeholder="Your Email Address">
+            </div>
+            <div data-aos="fade-up"data-aos-duration="2000"  data-aos-delay="4000">
+                <textarea id="message" name="message" rows="4" placeholder="Enter your Message"></textarea>
+            </div>
+            
             <button type="submit">Send</button>
           </form>
 
@@ -160,8 +175,11 @@
         <!--footer-->
         <br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <footer>
-            <p>Designed and Developed by Dhileep</p>
+        <footer id="footer">
+            <div data-aos="fade-zoom-in"data-aos-easing="ease-in-back"data-aos-offset="0">
+                <p>Designed and Developed by Dhileep</p>
+            </div>
+            
             <div class="icon">
                 <a class="insta insta-link" href="https://www.instagram.com/dhilee_02/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                 <a class="twitter twitter-link" href="https://twitter.com/dhileepguru" target="_blank"><i class="fab fa-twitter-square"></i></a>
